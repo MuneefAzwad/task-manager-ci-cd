@@ -4,7 +4,7 @@ TODO_OUTPUT_FILE="/app/todo_output.txt"
 TEST_OUTPUT_FILE="/app/test_output.txt"
 
 echo "Running todo.py..."
-python3 /app/scripts/todo.py > "$TODO_OUTPUT_FILE" 2>&1
+python3 /app/scripts/todo.py
 if [ $? -ne 0 ]; then echo "Error running todo.py"; exit 1; fi
 
 echo "Running todo-test.py..."
