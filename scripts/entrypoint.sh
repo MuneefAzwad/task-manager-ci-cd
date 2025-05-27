@@ -21,6 +21,7 @@ if [ $? -ne 0 ]; then echo "Error running todo-test.py"; exit 1; fi
 cd /app || { echo "Failed to change directory to /app"; exit 1; }
 
 echo "Updating index.html and pushing changes..."
+git commit -m "Fix: Add directory change in entrypoint.sh for module discovery"
 
 /bin/bash scripts/update_index.sh "$TODO_OUTPUT_FILE" "$TEST_OUTPUT_FILE"
 if [ $? -ne 0 ]; then echo "Error running update_index.sh"; exit 1; fi
