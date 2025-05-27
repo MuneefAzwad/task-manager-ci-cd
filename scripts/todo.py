@@ -19,12 +19,12 @@ class TaskPool:
         self.tasks = []
 
     def populate(self):
-        task1 = Task("Learn GitHub Actions")
+        task1 = Task("LEarn GitHub Actions")
         task2 = Task("Develop todo.py")
         task3 = Task("Write unit tests")
         task4 = Task("Create Dockerfile")
         task5 = Task("Set up CI/CD workflow")
-        task6 = Task("Test the pipeline")
+        task6 = Task("Test the Pipeline")
 
         task1.mark_completed()
         task2.mark_completed()
