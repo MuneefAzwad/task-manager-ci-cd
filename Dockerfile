@@ -8,6 +8,7 @@ RUN apt-get update && \
 
 COPY . /app
 
+
 RUN chmod +x /app/scripts/entrypoint.sh
 
 ENTRYPOINT ["/app/scripts/entrypoint.sh"]
