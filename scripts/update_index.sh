@@ -14,32 +14,32 @@ update_pre() {
 
 if [ ! -f index.html ]; then
     cat <<EOF > index.html
-    <!DOCTYPE html>
-    <html lang="en">
-    <head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Task Manager Report</title>
-        <style>
-            body { font-family: sans-serif; margin: 20px; }
-            pre { background-color: #f4f4f4; padding: 10px; border-radius: 5px; overflow-x: auto; }
-            h2 { color: #333; }
-        </style>
-    </head>
-    <body>
-        <h1>Task Management System Report</h1>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Task Manager Report</title>
+    <style>
+        body { font-family: sans-serif; margin: 20px; }
+        pre { background-color: #f4f4f4; padding: 10px; border-radius: 5px; overflow-x: auto; }
+        h2 { color: #333; }
+    </style>
+</head>
+<body>
+    <h1>Task Management System Report</h1>
 
-        <h2>To Do Tasks</h2>
-        <pre id="todo-tasks">No tasks yet.</pre>
+    <h2>To Do Tasks</h2>
+    <pre id="todo-tasks">No tasks yet.</pre>
 
-        <h2>Done Tasks</h2>
-        <pre id="done-tasks">No tasks yet.</pre>
+    <h2>Done Tasks</h2>
+    <pre id="done-tasks">No tasks yet.</pre>
 
-        <h2>Unit Test Results</h2>
-        <pre id="unit-tests">No test results yet.</pre>
-    </body>
-    </html>
-    EOF
+    <h2>Unit Test Results</h2>
+    <pre id="unit-tests">No test results yet.</pre>
+</body>
+</html>
+EOF
 fi
 
 update_pre "todo-tasks" "${TODO_TASKS}" "index.html"
